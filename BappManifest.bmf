@@ -1,0 +1,13 @@
+Uuid: 48ac18e2eddb4c36a28cece73a6fe39d
+ExtensionType: 1
+Name: AWS Cognito
+RepoName: aws-cognito
+ScreenVersion: 0.1.7
+SerialVersion: 1
+MinPlatformVersion: 12
+ProOnly: True
+Author: Nick Coblentz
+ShortDescription: Identify info from requests to AWS Cognito, provide passive scan checks and suggest request templates.
+EntryPoint: build/libs/burpmontoyacognito-0.1.7-fatjar.jar
+BuildCommand: ./gradlew fatJar
+SupportedProducts: Pro

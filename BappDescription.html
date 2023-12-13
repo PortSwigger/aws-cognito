@@ -1,0 +1,16 @@
+<p>This extension helps identify key information from requests to AWS Cognito, provides several passive scan checks, and suggests HTTP request templates for exploiting several known vulnerabilities.</p>
+
+<p>Features:</p>
+<ul>
+	<li>Proxy History: Adding comments to Burp Proxy History to reflect the Cognito Method found in "X-Amz-Target: AWSCognitoIdentityProviderService.RevokeToken"</li>
+	<li>Passive Scan Issues:
+		<ul>
+			<li>Log URLs observed matching "^cognito-(?:identity|idp)(?:-fips)?.[^\.]+.amazonaws.com$"</li>
+			<li>Log Identity Pool IDs observed in requests and suggestions for exploiting it</li>
+			<li>Log Client IDs observed in requests</li>
+			<li>Log custom user attributes found in the "idToken" or "GetUser" response</li>
+			<li>Log "InitiateAuth" requests and suggest request templates for "SignUp" and "UpdateUserAttributes"</li>
+			<li>Log "AWSCognitoIdentityService.GetCredentialsForIdentity" requests containing temporary credentials</li>
+		</ul>
+	</li>
+</ul>
